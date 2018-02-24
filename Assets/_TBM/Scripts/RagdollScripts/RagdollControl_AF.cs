@@ -527,9 +527,6 @@ namespace AnimFollow
 				return false;
 			}
 
-			if (!transform.root.GetComponent<ragdollHitByBullet_AF>())
-				Debug.Log("There is no ragdollHitByBullet script on the root transform of " + this.name + "\n");
-
 			if (!(hash = master.GetComponent<HashIDs_AF>()))
 			{
 				Debug.LogWarning("Missing Script: HashIDs on " + master.name + "\n");
